@@ -1,0 +1,176 @@
+/* documento Cadastro Clinte*/
+/*CABEÇALHO*/
+.Cabeçalho{
+
+	background: url(../img/banner/sofa7.jpg) no-repeat fixed center center;
+}
+
+/*BANNER*/
+.banner{
+	background: #ffa500;
+	padding: 5%;
+}
+
+.title{
+	width: 100%
+}
+
+.banner .title h2 {
+	font-size: 1em;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*Design Cadastro*/
+.cadastro{
+
+	width: 100%;
+	border-top: 2px solid #ffa500;
+	border-bottom: 2px solid #ffa500;
+	margin:5% 0% 5% 0%;
+}
+
+.cadastro label{
+
+	width: 30%;
+	font-size: 1em;
+	float: left;
+	text-align: left;
+	margin: 2%;
+}
+.cadastro input{
+
+	width: 60%;
+	margin:3% 0% 3% 3%;
+    border-bottom: 1px solid #ffa500;
+    color: #ffa500;
+    background: transparent;
+
+}
+.cadastro input[type="submit"]{
+	width: 40%;
+	margin:5%;
+	border-radius: 20px;
+	padding: 2%;
+	cursor: pointer;
+	border: none;
+	background: #000;
+	color: #ffa500;
+	float: left;
+}
+
+.cadastro input[type="reset"]{
+	width: 40%;
+	margin:5%;
+	border-radius: 20px;
+	padding: 2%;
+	cursor: pointer;
+	border: none;
+	background: #000;
+	color: #ffa500;
+	float: right;
+}
+.cadastro label{
+
+	width: 30%;
+	font-size: 1em;
+	float: left;
+	text-align: left;
+	margin: 2%;
+}
+
+.cadastro input[type="textarea"]{
+
+	width: 60%;
+	margin:3% 0% 3% 3%;
+    border-bottom: 1px solid #ffa500;
+    color: #ffa500;
+    background: transparent;
+}
+
+/*Área de informações */
+.renovar{
+	width: 100%;
+	padding: 2%;
+
+}
+.renovar h2 {
+	font-size: 0.8em;
+	margin-bottom:1%;
+	color:#DCDCDC;
+	text-align: center;
+}
+.renovar i{
+
+	padding: 2%;
+}
+
+/*Responsiidade*/
+/************************************************************Celular da xuxa***********************************************/
+@media screen and (min-width: 480px){
+
+}
+/********************************************************** Tablet da xuxa ************************************************/
+@media screen and (min-width: 768px){
+
+/*BANNER*/
+
+.banner{
+	padding: 2%;
+}
+.banner .title h2 {
+
+	font-size: 1.5em;
+	color: #000;
+	text-align: center;
+}
+
+
+/*Design cadastro*/
+.cadastro label{
+
+	width: 30%;
+	font-size: 1em;
+	float: left;
+	text-align: left;
+	margin: 2%;
+	padding: 0% 15%;
+}
+.cadastro input{
+
+	width: 60%;
+    float: left;
+    margin: 2%;
+}
+.cadastro input[type="submit"]{
+	width: 20%;
+	float: right;
+	padding: 1%;
+	margin: 1%;
+}
+
+.cadastro input[type="submit"]:hover {
+
+	background: #ffa500;
+	color: #000;
+
+}
+.cadastro input[type="reset"]{
+	width: 20%;
+	padding: 1%;
+	margin: 1%;
+	float: right;
+}
+.cadastro input[type="reset"]:hover {
+
+	background: #ffa500;
+	color: #000;
+
+}
+}
+/*************************************************Pc da xuxa***************************************************************/
+@media screen and (min-width: 1024px){
+
+}
+

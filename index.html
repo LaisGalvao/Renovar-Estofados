@@ -1,126 +1,17 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<!-- Aqui entra a responsividade-->
-		<meta name="viewport" content="width=device-width, initialz-scale=1" />
-		<title>Renovar Estofados</title>
-
-		<!--Aqui um mimo, icone da aba do navegador-->
-		<link rel="icon" href="img/icone/ICONRenovarSofa.png"/>
-		<link rel="stylesheet" href="css/stylegeral.css"/>
-		<link rel="stylesheet" href="css/stylehome.css"/>
-
-		<!-- Aqui usei google-font: Montserrat (Coloquei está, porque tem cara de gente fresca)-->	
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- Aqui usei google-font: Montserrat (Coloquei está, porque tem cara de gente fresca)-->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
 		<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
-
-		<!--fONT AWESOME usei a versão para baixa-renda--> 
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
-
-		<!--  AQUI COMEÇA O JQUERY AFFF-->
-		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-	</head>
-	<body>
-
-		<!--Cabeçalho do Cliente-->
-		<div class=" container AreaCliente bgBlack ">
-
-				<ul>
-				 	<li><a href="cadastrar.html" ><i class="fab fa-wpforms"></i>Cadastrar</a></li>
-				 	<li><a href="login.html"><i class="fas fa-user"></i>Login</a></li>
-				</ul>
-		</div>
-
-		<!--Cabeçalho-->
-		<header class=" banner container Cabeçalho ">
-			<a href="index.html" class="logo"></a>
-			<button  class="btnMenuRes bggradiente"><i class="fas fa-align-right"></i></button>
-
-
-			<nav class="menu">
-				<a href="#" class="btnClose"><i class="far fa-times-circle"></i></a>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="loja.php">Loja</a></li>
-					<li><a href="orcamento.html">Orçamento</a></li>
-					<li><a href="contato.html">Contato</a></li>
-					<label for="Log" class="Log"></label>
-					<label for="LogA" class="LogA"></label>
-				</ul>
-			</nav>
-
-		</header>
-		<!--Fim Cabeçalho-->
-
-		<!--Banner-->
-		<div class=" container banner">
-				<div class="title">
-					<h2> RENOVAR ESTOFADOS</h2>
-					<h3>Sempre com os melhores estofados para uma casa de classe</h3>
-				</div>
-		</div>
-		<!--Fim banner-->
-
-		<!--História-->
-			<main  class="container historia bgwhite">
-
-				<article class=" blocoH bgwhite radius ">
-						<div class="texto">
-							<h4>Nossa História</h4>
-								<p> 
-								 	Renovar Estofados uma estofaria tradicional de São Bernardo do Campo desde anos 90', com tradições familiares passada
-								 	entre gerações, mas sempre em busca da inovação e praticidade aos nossos clientes.
-								</p>
-
-								<p>
-								 	A Renovar  sempre trazendo os mais varidos design's tradicionalista e contemporâneos encontrados pelo mundo para sua sala.    
-								</p>
-						</div>
-				</article>
-			</main>
-		<!--Fim da história #ELENÃO-->
-
-		<!-- Área de informações-->
-		<section class=" container banner2  bgGray">
-
-			<div class="texto">
-
-					<h2>Os melhores designers</h2>	
-			</div>
-
-		</section>
-		<!--Área de informações-->
-
-		<!--Rodapé-->
-		<footer class=" container rodape bggradiente">
-
-			<div class="RedesSociais">
-				<a href=""><i class="fab fa-facebook-f"></i></a>
-				<a href=""><i class="far fa-envelope"></i></i></a>
-				<a href=""><i class="fas fa-phone"></i></i></a>
-				<a href=""><i class="fab fa-whatsapp"></i></a>
-			</div>
-
-			<p class="direitos"> Todos os direitos reservados a ZER01</p>
-		</footer>
-		<!--Fim Rodapé-->
-
-		<!--JQUERY ação-->
-		<script>
-	$(document).ready(function(){
-			
-			$(".Log").load('valida.php');
-			$(".LogA").load('validaA.php');
-	});
-			$(".btnMenuRes").click(function(){
-				$(".menu").show(200);
-			});
-			$(".btnClose").click(function(){
-				$(".menu").hide(200);
-			});
-		
-		</script>
-
-	</body>
+    <link rel="icon" href="couch-solid.svg" />
+    <title>Renovar!</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
