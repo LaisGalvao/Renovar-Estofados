@@ -4,7 +4,7 @@
 	//que serão necessárias para a conexão com o banco 
 	$servidor = "localhost";
 	$loginS = "RenovarEstofados";
-	$senhaS = "renovar123";
+	$senhaS = "R3n0v@r123doisk22";
 	$dbname = "dbtapecaria";
 	
 	//a linha abaixo cria ums instância para ums nova conexão
