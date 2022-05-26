@@ -1,0 +1,5 @@
+icon add <i class="fas fa-plus"></i>
+icon X <i class="fas fa-times"></i>
+icon minus <i class="fas fa-minus"></i>
+icon redo <i class="fas fa-redo"></i>
+icon cart <i class="fas fa-cart-plus"></i>

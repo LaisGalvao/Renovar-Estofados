@@ -1,0 +1,290 @@
+/*Documento TELA Loja lembre-se que aqui você chamou a class banner para aderir ao cabeçalho.*/
+/* Por conta da  imagem de fundo, */
+
+/*BANNER*/
+.banner{
+	background: url(../img/banner/sofa2cel.jpg) no-repeat fixed center center;
+}
+ 
+.title{
+	width: 100%
+}
+
+.banner .title h2 {
+
+	font-size: 2.5em;
+	color: #000;
+	font-weight: bold;
+}
+
+.banner .title h3 {
+
+	font-size: 1.2em;
+	color: #000;
+}
+.btnBanner{
+
+	width: 100%;
+	margin-top: 2%;
+	text-align: left;
+	padding: 5%;
+	font-size: 1.5em;
+	cursor: pointer;
+	opacity: 0.70;
+}
+.btnBanner i{
+
+	float: right;
+}
+.btnSobre{
+
+	color: #FFF;
+}
+/*Conteúdo principal*/
+.produto{
+	width: 100%;
+	text-align: left;
+	margin-bottom: 3%;
+}
+.produto img{
+
+ 	border-radius: 10px 10px 0px 0px;
+}
+.produto .texto{
+
+	padding: 7%;
+}
+.produto .texto a{
+
+	font-size: 2em;
+	color:#000;
+	font-weight: bold;
+}
+.produto .texto h4{
+
+	font-size: 1.5em;
+	color:#000;
+	margin-top: 1%;
+}
+.produto .texto p{
+
+	font-size: 1.2em;
+	color:#000;
+	margin-top: 8%;
+	line-height: 25px;
+}
+/*Fim do conteúdo principal*/
+
+
+/* newslatter formulário antes que alguém pergunte NÃO terá newslatter, fiz só para entender responsividade em formulário*/
+.title{
+	width: 100%;
+	padding: 2%;
+}
+.title h1 {
+
+	font-size: 2em;
+}
+.title h2 {
+	font-size: 1.1em;
+	color:#DCDCDC;
+}
+.form{
+	width: 100%;
+	margin:5% 0;
+}
+
+.form input{
+
+	width: 100%;
+	padding: 4%;
+}
+.btnNewslatter{
+	margin-top: 3%;
+	color:#333;
+	font-weight: bold;
+	font-size: 1.5em;
+	background-color: #999;
+}
+/*newslatter formulário*/
+
+/*Responsividade*/
+/************************************************************Celular da xuxa***********************************************/
+@media screen and (min-width: 480px){
+
+}
+/********************************************************** Tablet da xuxa ************************************************/
+@media screen and (min-width: 768px){
+
+.banner{
+	background: url(../img/banner/sofa2TRABRET.jpg) no-repeat fixed center center;
+}
+
+.btnBanner{
+	width: 40%; 
+	padding: 1.5%;
+}
+.btnCadastrar{
+	float:left;
+}
+
+.btnSobre{
+	float:right;
+}
+
+.produto{
+	width: 49%; 
+	float: left; 
+	margin-right: 2%;
+}
+.produto:nth-child(2){
+	margin-right: 0;
+}
+
+.newslatter .title{
+	
+	width: 100%;
+
+}
+
+.newslatter h1{
+
+	font-size: 2.0em;
+	font-weight: bold;
+}
+.newslatter h2{
+
+	font-size: 1.2em;
+}
+
+
+.newslatter input{
+
+	width: 70%;
+	padding: 2%;
+	float: left;
+	margin-right: 1%;
+}
+.newslatter .btnNewslatter {
+
+	width: 25%;
+	padding: 2%;
+	float: right;
+	margin-top: 0;
+	font-weight: bold;
+	font-size: 1em;
+
+}
+/************************************************************laptop da xuxa***********************************************/
+@media screen and (min-width: 960px){
+
+.banner .title h2 {
+
+	font-size: 3.5em;
+	color: #000;
+	font-weight: 700;
+}
+
+.banner .title h3 {
+
+	font-size: 1.5em;
+	color: #000;
+}
+
+.title{ 
+
+	width: 80%;
+	float:left;
+	text-align: left;
+}
+.banner .title h2 {
+
+	font-size: 2.8em;
+	color: #000;
+	font-weight: bold;
+}
+
+.banner .title h3 {
+
+	font-size: 1.3em;
+	color: #000;
+}
+
+.btnBanner{
+
+	width: 20%;
+	float: right;
+	margin-top: 0px;
+	padding: 2%px;
+	margin-bottom: 2%;
+	opacity: 0.80;	
+}
+.newslatter input{
+
+	width: 60%;
+	float: none;
+	margin-top: 2%;
+	
+}
+.newslatter .btnNewslatter {
+
+   width: 20%;
+   float: none;
+   margin-top: 2%;
+}
+.newslatter{
+
+	width: 100%;
+}
+.newslatter .title h1{
+
+	font-size: 2.8em;
+	font-weight: bold;
+	text-align: center;
+	
+}
+.newslatter .title h2{
+
+	font-size: 1.2em;
+	text-align: center;
+	width: 100%;
+}
+/*************************************************Pc da xuxa***************************************************************/
+@media screen and (min-width: 1024px){
+
+.banner{
+
+	background: url(../img/banner/sofa02.jpg) no-repeat fixed center center ;
+}
+
+.produto{
+
+	width: 30%;
+
+}
+.produto:nth-child(2){
+
+	margin-right: 2%;
+}
+.produto:nth-child(3){
+
+	margin-right: 2%;
+
+}
+.newslatter{
+
+	width: 100%;
+}
+.newslatter .title h1{
+
+	font-size: 2.8em;
+	font-weight: bold;
+	text-align: center;
+	
+}
+.newslatter .title h2{
+
+	font-size: 1.2em;
+	text-align: center;
+	width: 100%;
+}
