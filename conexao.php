@@ -3,9 +3,9 @@
 	//as variáveis abaixo fazem a chamada das ações 
 	//que serão necessárias para a conexão com o banco 
 	$servidor = "localhost";
-	$loginS = "RenovarEstofados";
-	$senhaS = "renovar123";
-	$dbname = "dbtapecaria";
+	$loginS = "id19780643_renovarestofados";
+	$senhaS = "?IC{KgAlbB2=fS2{";
+	$dbname = "id19780643_dbtapecaria";
 	
 	//a linha abaixo cria ums instância para ums nova conexão
 	$conn = new mysqli($servidor, $loginS, $senhaS, $dbname);
