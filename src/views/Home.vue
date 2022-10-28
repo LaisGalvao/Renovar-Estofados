@@ -3,7 +3,7 @@
     <HeaderVue /> <BannerVue />
     <!--História-->
     <main class="container historia bgwhite">
-      <article class=" blocoH bgwhite radius ">
+      <article class="blocoH bgwhite radius">
         <div class="texto">
           <h4>Nossa História</h4>
           <p>
@@ -25,12 +25,18 @@
 </template>
 
 <script>
-import BannerVue from '../components/Banner.vue'
-import HeaderVue from '../components/Header.vue'
-import FooterVue from '../components/Footer.vue'
+import BannerVue from "../components/Banner.vue";
+import HeaderVue from "../components/Header.vue";
+import FooterVue from "../components/Footer.vue";
+import { api } from "../services";
 export default {
-  components: { HeaderVue, BannerVue, FooterVue }
-}
+  components: { HeaderVue, BannerVue, FooterVue },
+  mounted() {
+    api.get("/user").then(r =>{
+      console.log(r.data);
+    })
+  },
+};
 </script>
 
 <style></style>
