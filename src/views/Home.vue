@@ -25,18 +25,18 @@
 </template>
 
 <script>
-import BannerVue from "../components/Banner.vue";
-import HeaderVue from "../components/Header.vue";
-import FooterVue from "../components/Footer.vue";
-import { api } from "../services";
+import BannerVue from '../components/Banner.vue'
+import HeaderVue from '../components/Header.vue'
+import FooterVue from '../components/Footer.vue'
+import { api } from '../services'
 export default {
   components: { HeaderVue, BannerVue, FooterVue },
-  mounted() {
-    api.get("/user").then(r =>{
-      console.log(r.data);
+  mounted () {
+    api.get('/user').then(r => {
+      console.log(r.data)
     })
-  },
-};
+  }
+}
 </script>
 
 <style></style>
