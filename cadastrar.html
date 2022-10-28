@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<!-- Aqui entra a responsividade-->
+		<meta name="viewport" content="width=device-width, initialz-scale=1" />
+		<title>Cadastro Renovar</title>
+
+		<!--Aqui um mimo, icone da aba do navegador-->
+		<link rel="icon" href="img/icone/ICONRenovarSofa.png"/>
+		<link rel="stylesheet" href="css/stylegeral.css"/>
+		<link rel="stylesheet" href="css/stylecadastrocli.css"/>
+
+		<!-- Aqui usei google-font: Montserrat (Coloquei está, porque tem cara de gente fresca)-->	
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+
+		<!--fONT AWESOME usei a versão para baixa-renda--> 
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+
+		<!--  AQUI COMEÇA O JQUERY AFFF-->
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+
+	<!--Cabeçalho do Cliente-->
+		<div class=" container AreaCliente bgBlack">
+				 <ul>
+				 	<li><a href="cadastrar.html" ><i class="fab fa-wpforms"></i>Cadastrar</a></li>
+				 	<li><a href="login.html"><i class="fas fa-user"></i>Login</a></li>
+				 </ul>
+		</div>
+
+		<!--Cabeçalho-->
+		<header class="container Cabeçalho ">
+			<a href="index.html" class="logo"></a>
+			<button  class="btnMenuRes bggradiente"><i class="fas fa-align-right"></i></button>
+
+			<nav class="menu">
+				<a href="#" class="btnClose"><i class="far fa-times-circle"></i></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="">Loja</a></li>
+					<li><a href="orcamento.html">Orçamento</a></li>
+					<li><a href="">Contato</a></li>
+					<label for="Log" class="Log"></label>
+					<label for="LogA" class="LogA"></label>
+				</ul>
+			</nav>
+		</header>
+		<!--Fim Cabeçalho-->
+
+		<!--Banner-->
+		<div class=" container banner">
+				<div class="title">
+					<h2><I>Cadastre-se aqui</I></h2>
+				</div>		
+		</div>
+		<!--Fim banner-->
+
+		<!-- Cadastrato-->
+		<main class=" container cadastro bgwhite">
+
+			<div class="radius" >
+
+				<form action="cadastroCliente.php" method="POST">
+			
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+	
+					<label for="nome" class="cadclientealabel">Nome:</label>
+					<input type="text" id="txtNomeCli" name="txtNomeCli" placeholder="Digite seu nome:" class="cadclienteinput" />
+			
+					<label for="rg" class="cadclientealabel">RG:</label>
+					<input type="text" id="txtRg" name="txtRg" placeholder="00.000.000-0" class="cadclienteinput"/>
+					<script type="text/javascript">$("#txtRg").mask("00.000.000-A");</script>
+		
+					<label for="cpf" class="cadclientealabel">CPF:</label>
+					<input type="text" id="txtCpf" name="txtCpf" placeholder="000.000.000-00" class="cadclienteinput"/>
+					<script type="text/javascript">$("#txtCpf").mask("000.000.000-00");</script>
+			
+					<label for="endereco" class="cadclientealabel">Endereço:</label>
+					<input type="text" id="txtEndereco" name="txtEndereco"  class="cadclienteinput"/>
+			
+					<label for="telefone" class="cadclientealabel">Telefone:</label>
+					<input type="text" id="txtTelefone" name="txtTelefone" class="cadclienteinput" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}"/>
+					<script type="text/javascript">$("#txtTelefone").mask("(00) 0000-0000");</script>
+			
+					<label for="celular" class="cadclientealabel">Celular:</label>
+					<input type="text" id="txtCelular" name="txtCelular" class="cadclienteinput" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4-5}" />
+					<script type="text/javascript">$("#txtCelular").mask("(99) 9999-99999");</script>
+		
+					<label for="email"class="cadclientealabel">Email:</label>
+					<input type="text" id="txtEmail" name="txtEmail" placeholder=" exemplo@exemplo.com" class="cadclienteinput" />
+			
+					<label for="bairro" class="cadclientealabel">Bairro:</label>
+					<input type="text" id="txtBairro" name="txtBairro" class="cadclienteinput" />
+			
+					<label for="numero" class="cadclientealabel">Número:</label>
+					<input type="text" id="txtNumCasa" name="txtNumCasa" class="cadclienteinput"/>
+			
+					<label for="complemento" class="cadclientealabel">Complemento:</label>
+					<input type="text" id="txtCompCasa" name="txtCompCasa" class="cadclienteinput" />
+			
+					<label for="cep"class="cadclientealabel">CEP:</label>
+					<input type="text" id="txtCep" name="txtCep" class="cadclienteinput" />
+					<script type="text/javascript">$("#txtCep").mask("00000-000");</script>
+			
+					<label for="senha"class="cadclientealabel"> Senha:</label>
+					<input type="password" id="txtSenha" name="txtSenha" class="cadclienteinput" />
+					
+					<input type="submit" id="btnCadCliente" name="btnCadCliente" value="Cadastrar"/>
+					<input type="reset" id="btnlimparCadCliente" name="btnlimparCadCliente" value="Limpar"/>
+
+				</form>
+			</div>
+		</main>
+		<!-- Fim do Cadastro-->
+
+		<!-- Área de informações-->
+		<section class=" container renovar bgGray">
+
+			<div>
+				<h2><i class="fas fa-brain"></i>Criatividade </h2>
+				<h2><i class="fas fa-pencil-alt"></i>Originalidade</h2>
+				<h2><i class="fas fa-glass-martini"></i>Requinte</h2>
+			</div>
+
+		</section>
+		<!--Área de informações-->
+		<!--Rodapé-->
+		<footer class=" container rodape bggradiente">
+
+			<div class="RedesSociais">
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a>
+				<a href=""><i class="fab fa-twitter"></i></a>
+				<a href=""><i class="fab fa-whatsapp"></i></a>
+			</div>
+
+			<p class="direitos"> Todos os direitos reservados a ZER01</p>
+		</footer>
+		<!--Fim Rodapé-->
+
+		<!--JQUERY ação menu responsivo-->
+		<script>
+			$(document).ready(function(){
+			
+			$(".Log").load('valida.php');
+			$(".LogA").load('validaA.php');
+			$(".btnMenuRes").click(function(){
+				$(".menu").show(200);
+			});
+			$(".btnClose").click(function(){
+				$(".menu").hide(200);
+			});
+		});
+		</script>
+
+</body>
+</html>

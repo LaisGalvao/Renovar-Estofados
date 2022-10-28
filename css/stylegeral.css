@@ -1,0 +1,242 @@
+/*Documento css Cabeçalho, Rodapé  e controle geral*/
+/*aqui limpo toda área deixando livre para trabalho início*/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+	border:none;
+	outline: none;
+	box-sizing: border-box; 
+	font-family: 'Montserrat';
+}
+
+body{
+
+	background-color:  #ccc;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+img{
+	max-width: 100%
+}/*fim da limpeza de área*/
+
+
+/* Configuração padrão*/
+.container{
+	width: 100%;
+	float: left;
+	padding: 3% 4%;
+	text-align: center;
+} 
+
+.bggradiente{
+
+	background: linear-gradient(to right, #070606, #1c1919);
+}
+.bgBlack{
+
+	background-color: #000;
+}
+.bgGray{
+
+	background-color: #696969;
+} 
+.bgwhite{
+
+	background-color: #FFF;
+}
+.radius{
+
+	border-radius: 15px;
+    
+}
+/*Fim da configuração padrão*/
+
+/*Cabeçalho*/
+.AreaCliente{
+	z-index: 99;
+	position: fixed;
+}
+.AreaCliente ul li a{
+	color: #ffa500;
+	float: right;
+	font-size: 0.9em;
+	width: 50%
+}
+.AreaCliente i{
+
+	padding: 2%;
+}
+.Cabeçalho{
+	margin-top: 9%;
+}
+
+.logo{
+	width: 56px;
+	height: 56px;
+	float:left;
+	background: url(../img/icone/ICONRenovarSofa.png) center center/56px no-repeat;
+}
+
+/*Menu*/
+.btnMenuRes{
+	width: 56px;
+	height: 56px;
+	float:right;
+	border-radius: 56px;
+	color:#FFF;
+	cursor:pointer;
+	text-align: center;
+	font-size: 1.5em;
+	
+}
+.menu{
+	display: none;
+
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background:#CCC;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.9);
+	z-index: 99;
+}
+
+.btnClose{
+
+	font-size: 1.5em;
+	color:#FFF;
+	float: right;
+	cursor:pointer;
+	margin: 12% 3% 0 0;
+}
+.menu ul{
+	margin-top: 12%;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.menu ul li{
+	padding: 1.54;
+}
+.menu ul li a{
+
+	font-size:2em;
+	color:#FFF;
+}
+
+/*Rodapé*/
+.RedesSociais{
+
+	width: 100%;
+}
+.RedesSociais a{
+
+	font-size: 1.7em;
+	color:#ffa500;
+	margin-right: 3%;
+	opacity: 0.7;
+}
+/* esta merda aqui em baixo tira o espaço do último campo*/
+.RedesSociais a:last-child{ 
+	margin-right: 0;
+}
+.RedesSociais a:hover{
+
+	opacity: 1;
+}
+
+.direitos{
+	margin-top: 5%;
+	color: #FFF;
+	opacity: 0.7;
+}
+/*Fim do rodapé*/
+
+/*Aqui entra ação da responsividade*/
+
+/************************************************************Celular da xuxa***********************************************/
+@media screen and (min-width: 480px){
+
+.logo{
+	width: 100px;
+	height: 100px;
+	float:left;
+	background: url(../img/icone/ICONRenovarEstofadosMINI.png) center center/100px no-repeat;
+	
+}
+
+/********************************************************** Tablet da xuxa ************************************************/
+@media screen and (min-width: 768px){
+
+}
+/************************************************************laptop da xuxa***********************************************/
+@media screen and (min-width: 960px){
+
+.AreaCliente ul li a{
+
+	width: 10%;
+}
+.AreaCliente{
+position: fixed;
+}
+.Cabeçalho{
+	margin-top: 0;
+}
+.btnMenuRes{
+	display: none;
+}
+.btnClose{
+	display: none;
+}
+.menu {
+
+	width: auto;
+	height: 56px;
+	line-height: 56px;
+	float: right;
+	background-color:transparent;
+	display: block;
+	position: static; 
+}
+.menu  ul li{
+
+	padding: 0; 
+	float: left;
+	margin-top: 30%;
+} 
+.menu ul li a{
+	color: black;
+	font-size: 2em;
+	padding: 12px;
+
+}
+.menu ul li a:hover{
+
+	color: #ffa500;
+	border-bottom: 2px solid #ffa500;
+
+}
+
+
+/*************************************************Pc da xuxa***************************************************************/
+@media screen and (min-width: 1024px){
+	
+.logo{
+	
+	width: 256px;
+	height: 256px;
+	margin-top: 5%;
+	background: url(../img/icone/ICONRenovarEstofadosMINI.png) center center/156px no-repeat;
+		
+}
+
+
